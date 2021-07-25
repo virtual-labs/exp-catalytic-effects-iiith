@@ -15,11 +15,18 @@ async function moveCuvette() {
     duration: 800,
     easing: "linear",
   });
+  let transY = 300;
+  let transX = 200;
+  screenWidth();
+  if (divWidth < 769) {
+    transX = 100;
+    transY = 250;
+  }
   if (overallIteration === 4) {
     a1.add({
       duration: 1000,
-      translateX: 200,
-      translateY: 300,
+      translateX: transX,
+      translateY: transY,
       scale: 0.25,
     })
       .add({
@@ -91,14 +98,11 @@ async function pourGold() {
     screenWidth();
     console.log("divWidth: ", divWidth);
 
-    if (divWidth > 1759) {
-      startY = "-100%";
-      startX = "-490%";
-    }
-
     if (divWidth < 769) {
-      startY = "120%";
-      startX = "-980%";
+      startY = "-120%";
+      startX = "-480%";
+      endY = "700%";
+      endX = "0%";
     }
 
     a1.add({
@@ -148,19 +152,19 @@ async function pourEosin() {
       duration: 800,
       easing: "linear",
     });
-    let startX = "-980%";
-    let startY = "150%";
+    let startX = "450%";
+    let startY = "-100%";
+
+    let endX = "2050%";
+    let endY = "-150%";
 
     screenWidth();
 
-    if (divWidth > 1759) {
-      startY = "-150%";
-      startX = "450%";
-    }
-
     if (divWidth < 769) {
-      startY = "120%";
-      startX = "-980%";
+      startY = "-120%";
+      startX = "480%";
+      endY = "700%";
+      endX = "0%";
     }
 
     a1.add({
@@ -172,11 +176,11 @@ async function pourEosin() {
     await new Promise((r) => setTimeout(r, 1000));
     a1.add({
       duration: 500,
-      translateX: "-110%",
+      translateX: endX,
     })
       .add({
         duration: 800,
-        translateY: "170%",
+        translateY: endY,
       })
       .add({
         opacity: 0,
@@ -207,19 +211,19 @@ async function pourSodium() {
       duration: 800,
       easing: "linear",
     });
-    let startX = "-980%";
-    let startY = "150%";
+    let startX = "0%";
+    let startY = "180%";
+
+    let endX = "2050%";
+    let endY = "-150%";
 
     screenWidth();
 
-    if (divWidth > 1759) {
-      startY = "-150%";
-      startX = "450%";
-    }
-
     if (divWidth < 769) {
-      startY = "120%";
-      startX = "-980%";
+      startY = "170%";
+      startX = "0%";
+      endY = "700%";
+      endX = "0%";
     }
 
     a1.add({
@@ -231,11 +235,11 @@ async function pourSodium() {
     await new Promise((r) => setTimeout(r, 1000));
     a1.add({
       duration: 500,
-      translateX: "-110%",
+      translateX: endX,
     })
       .add({
         duration: 800,
-        translateY: "170%",
+        translateY: endY,
       })
       .add({
         opacity: 0,
