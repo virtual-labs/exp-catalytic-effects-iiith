@@ -96,7 +96,6 @@ async function pourGold() {
     let endY = "-150%";
 
     screenWidth();
-    console.log("divWidth: ", divWidth);
 
     if (divWidth < 769) {
       startY = "-120%";

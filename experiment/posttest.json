@@ -1,0 +1,73 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Gel is a form of which of the following mixtures:",
+      "answers": {
+        "a": "Suspension",
+        "b": "Solution",
+        "c": "Colloid",
+        "d": "Heterogenous Mixture"
+      },
+      "explanations": {
+        "a": "A suspension is a heterogeneous mixture in which the solute particles do not dissolve, but get suspended throughout the bulk of the solvent, left floating around freely in the medium.",
+        "b": "A solution is a special type of homogeneous mixture composed of two or more substances mixed in a single phase.",
+        "c": "A colloid is a mixture in which one substance of microscopically dispersed insoluble particles are suspended throughout another substance.",
+        "d": "Heterogenous mixture do not form a single phase, while Gel does so."
+      },
+      "difficulty": "beginner",
+      "correctAnswer": "c"
+    },
+    {
+      "question": "2. A gel belongs to which of the following colloids?",
+      "answers": {
+        "a": "Solid in Gas",
+        "b": "Solid in Solid",
+        "c": "Liquid in Solid",
+        "d": "Solid in Liquid"
+      },
+      "explanations": {
+        "a": "an example of solid dispersed in the gas phase is solid foam.",
+        "b": "an example of solid dispersed in solid phase is solid sol like cranberry glass.",
+        "c": "an example of liquid dispersed in solid phase is suspension like pigmented ink.",
+        "d": "an example of solid dispersed in liquid phase is gel."
+      },
+      "difficulty": "beginner",
+      "correctAnswer": "d"
+    },
+    {
+      "question": "3. Solubility of the agar polysaccharide in water depends on:",
+      "answers": {
+        "a": "functional groups present in it.",
+        "b": "hydrophobic nature of repeating units.",
+        "c": "length of the repeating unit.",
+        "d": "structure of the repeating unit."
+      },
+      "explanations": {
+        "a": "functional groups present in any chain will help in solubility only when the chain length is small. For longer chain length the effect of the chain is dominant on the functional groups.",
+        "b": "the longer the chain length, more is the hydrophobicity of the molecule and in the case if agar, it is the dominant factor.",
+        "c": "while length of repeating units is key to the hydrophobic nature of the gel, the hydrophobicity does not change for small changes in the length of repeating units.",
+        "d": "the structure of the repeating units play a major role after the dissolution has happened during cooling."
+      },
+      "difficulty": "intermediate",
+      "correctAnswer": "b"
+    },
+    {
+      "question": "4. Agar agar gel finds use in Cell structure and microbiology as:",
+      "answers": {
+        "a": "It is stable under a wide range of temperature for longer periods of time",
+        "b": "it is resistant to change in pH.",
+        "c": "it is indigestible to many organisms.",
+        "d": "it is cheap and easy to make."
+      },
+      "explanations": {
+        "a": "Agar agar jelly degrades if exposed to high temperatures for long periods of time.",
+        "b": "it can degrade under pH less than 6.",
+        "c": "Agar is indigestible for many organisms so that microbial growth does not affect the gel used and it remains stable.",
+        "d": "though it is cheap and easy to prepare, the primary reason is to meet the nutritional needs of microbes."
+      },
+      "difficulty": "advanced",
+      "correctAnswer": "c"
+    }
+  ]
+}
