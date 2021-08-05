@@ -1,0 +1,73 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. In heterogeneous catalysis of a gaseous reactants over solid catalyst:",
+      "answers": {
+        "a": "Reaction occurs on the surface of the catalyst.",
+        "b": "reaction occurs when the gases diffuse towards the surface of the catalyst.",
+        "c": "reaction occurs when the gases are about to desorb from the catalyst surface.",
+        "d": "reaction occurs after the desorption of reactants."
+      },
+      "explanations": {
+        "a": "reaction starts as soon as both reactants adsorb closely on the surface of the catalyst.",
+        "b": "the reactants have to adsorb on the catalyst surface to react.",
+        "c": "reactions complete while the reactants are on the surface of the catalyst, the rate of desorption does not affect the rate of the reaction.",
+        "d": "reaction cannot occur after the desorption of the reactants from the catalytic surface."
+      },
+      "difficulty": "beginner",
+      "correctAnswer": "a"
+    },
+    {
+      "question": "2. When body temperature is high, doctors advice consumption of light food. This is because:",
+      "answers": {
+        "a": "At high temperature the body is weak",
+        "b": "Body temperature can increase further.",
+        "c": "At high temperature certain enzymes get denatured and cannot function well.",
+        "d": "At high temperature co-enzymes are not available. "
+      },
+      "explanations": {
+        "a": "though the body is weak at higher temperatures, there is no correlation between light food and high temperature.",
+        "b": "light food is not known to increase body temperature further.",
+        "c": "catalysts and enzymes (which are mostly proteins) can get denatured at high temperatures making them inactive. Digesting heavy food may not be achieved properly.",
+        "d": "co-enzymes may or may not be affected at high temperatures. "
+      },
+      "difficulty": "intermediate",
+      "correctAnswer": "c"
+    },
+    {
+      "question": "3. Can one follow the reduction of eosin by borohydride by measuring the absorbance of gold particles and why?",
+      "answers": {
+        "a": "yes, as the gold particles get used up in the reaction.",
+        "b": "no, as the gold particles are used up in the reaction.",
+        "c": "no, as the gold particles are catalysts and are regenerated back at the end of the reaction.",
+        "d": "yes, as the gold particles become colorless."
+      },
+      "explanations": {
+        "a": "gold particles are catalysts and are used up temporarily.",
+        "b": "gold particles are not used up permanently.",
+        "c": "gold particles are catalysts and rendered free after the reaction, the absorbance maximum will be affected temporarily.",
+        "d": "gold particles are unaffected."
+      },
+      "difficulty": "intermediate",
+      "correctAnswer": "c"
+    },
+    {
+      "question": "4. Why does the absorbance vs time plot become flat after some time:",
+      "answers": {
+        "a": "No more gold particles are available for reaction.",
+        "b": "the reduction reaction is complete.",
+        "c": "sodium borohydride is left in excess.",
+        "d": "gold particles absorb all incoming light."
+      },
+      "explanations": {
+        "a": "a lot of free gold particles are present in the solution at the end of the reaction.",
+        "b": "reduction reaction is complete and no more eosin is available to absorb incoming radiation.",
+        "c": "sodium borohydride does not absorb in the same range as others. Hence cannot affect the plot.",
+        "d": "gold particles will not absorb all light."
+      },
+      "difficulty": "advanced",
+      "correctAnswer": "b"
+    }
+  ]
+}
