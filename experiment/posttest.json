@@ -2,72 +2,72 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1. Gel is a form of which of the following mixtures:",
+      "question": "1. In heterogeneous catalysis of a gaseous reactants over solid catalyst:",
       "answers": {
-        "a": "Suspension",
-        "b": "Solution",
-        "c": "Colloid",
-        "d": "Heterogenous Mixture"
+        "a": "Reaction occurs on the surface of the catalyst.",
+        "b": "reaction occurs when the gases diffuse towards the surface of the catalyst.",
+        "c": "reaction occurs when the gases are about to desorb from the catalyst surface.",
+        "d": "reaction occurs after the desorption of reactants."
       },
       "explanations": {
-        "a": "A suspension is a heterogeneous mixture in which the solute particles do not dissolve, but get suspended throughout the bulk of the solvent, left floating around freely in the medium.",
-        "b": "A solution is a special type of homogeneous mixture composed of two or more substances mixed in a single phase.",
-        "c": "A colloid is a mixture in which one substance of microscopically dispersed insoluble particles are suspended throughout another substance.",
-        "d": "Heterogenous mixture do not form a single phase, while Gel does so."
+        "a": "reaction starts as soon as both reactants adsorb closely on the surface of the catalyst.",
+        "b": "the reactants have to adsorb on the catalyst surface to react.",
+        "c": "reactions complete while the reactants are on the surface of the catalyst, the rate of desorption does not affect the rate of the reaction.",
+        "d": "reaction cannot occur after the desorption of the reactants from the catalytic surface."
       },
       "difficulty": "beginner",
-      "correctAnswer": "c"
+      "correctAnswer": "a"
     },
     {
-      "question": "2. A gel belongs to which of the following colloids?",
+      "question": "2. When body temperature is high, doctors advice consumption of light food. This is because:",
       "answers": {
-        "a": "Solid in Gas",
-        "b": "Solid in Solid",
-        "c": "Liquid in Solid",
-        "d": "Solid in Liquid"
+        "a": "At high temperature the body is weak",
+        "b": "Body temperature can increase further.",
+        "c": "At high temperature certain enzymes get denatured and cannot function well.",
+        "d": "At high temperature co-enzymes are not available. "
       },
       "explanations": {
-        "a": "an example of solid dispersed in the gas phase is solid foam.",
-        "b": "an example of solid dispersed in solid phase is solid sol like cranberry glass.",
-        "c": "an example of liquid dispersed in solid phase is suspension like pigmented ink.",
-        "d": "an example of solid dispersed in liquid phase is gel."
-      },
-      "difficulty": "beginner",
-      "correctAnswer": "d"
-    },
-    {
-      "question": "3. Solubility of the agar polysaccharide in water depends on:",
-      "answers": {
-        "a": "functional groups present in it.",
-        "b": "hydrophobic nature of repeating units.",
-        "c": "length of the repeating unit.",
-        "d": "structure of the repeating unit."
-      },
-      "explanations": {
-        "a": "functional groups present in any chain will help in solubility only when the chain length is small. For longer chain length the effect of the chain is dominant on the functional groups.",
-        "b": "the longer the chain length, more is the hydrophobicity of the molecule and in the case if agar, it is the dominant factor.",
-        "c": "while length of repeating units is key to the hydrophobic nature of the gel, the hydrophobicity does not change for small changes in the length of repeating units.",
-        "d": "the structure of the repeating units play a major role after the dissolution has happened during cooling."
+        "a": "though the body is weak at higher temperatures, there is no correlation between light food and high temperature.",
+        "b": "light food is not known to increase body temperature further.",
+        "c": "catalysts and enzymes (which are mostly proteins) can get denatured at high temperatures making them inactive. Digesting heavy food may not be achieved properly.",
+        "d": "co-enzymes may or may not be affected at high temperatures. "
       },
       "difficulty": "intermediate",
-      "correctAnswer": "b"
+      "correctAnswer": "c"
     },
     {
-      "question": "4. Agar agar gel finds use in Cell structure and microbiology as:",
+      "question": "3. Can one follow the reduction of eosin by borohydride by measuring the absorbance of gold particles and why?",
       "answers": {
-        "a": "It is stable under a wide range of temperature for longer periods of time",
-        "b": "it is resistant to change in pH.",
-        "c": "it is indigestible to many organisms.",
-        "d": "it is cheap and easy to make."
+        "a": "yes, as the gold particles get used up in the reaction.",
+        "b": "no, as the gold particles are used up in the reaction.",
+        "c": "no, as the gold particles are catalysts and are regenerated back at the end of the reaction.",
+        "d": "yes, as the gold particles become colorless."
       },
       "explanations": {
-        "a": "Agar agar jelly degrades if exposed to high temperatures for long periods of time.",
-        "b": "it can degrade under pH less than 6.",
-        "c": "Agar is indigestible for many organisms so that microbial growth does not affect the gel used and it remains stable.",
-        "d": "though it is cheap and easy to prepare, the primary reason is to meet the nutritional needs of microbes."
+        "a": "gold particles are catalysts and are used up temporarily.",
+        "b": "gold particles are not used up permanently.",
+        "c": "gold particles are catalysts and rendered free after the reaction, the absorbance maximum will be affected temporarily.",
+        "d": "gold particles are unaffected."
+      },
+      "difficulty": "intermediate",
+      "correctAnswer": "c"
+    },
+    {
+      "question": "4. Why does the absorbance vs time plot become flat after some time:",
+      "answers": {
+        "a": "No more gold particles are available for reaction.",
+        "b": "the reduction reaction is complete.",
+        "c": "sodium borohydride is left in excess.",
+        "d": "gold particles absorb all incoming light."
+      },
+      "explanations": {
+        "a": "a lot of free gold particles are present in the solution at the end of the reaction.",
+        "b": "reduction reaction is complete and no more eosin is available to absorb incoming radiation.",
+        "c": "sodium borohydride does not absorb in the same range as others. Hence cannot affect the plot.",
+        "d": "gold particles will not absorb all light."
       },
       "difficulty": "advanced",
-      "correctAnswer": "c"
+      "correctAnswer": "b"
     }
   ]
 }

@@ -2,69 +2,69 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1. Gel is a form of which of the following mixtures:",
+      "question": "1. Which of the following will have highest catalytic activity:",
       "answers": {
-        "a": "Suspension",
-        "b": "Solution",
-        "c": "Colloid",
-        "d": "Heterogenous Mixture"
+        "a": "100 cubes of catalyst 1mm each side.",
+        "b": "100 spheres of catalyst of radius 1mm each.",
+        "c": "100 hemispheres of catalyst of radius 1mm each.",
+        "d": "100 cones of catalyst of radius and height 1 mm each."
       },
       "explanations": {
-        "a": "A suspension is a heterogeneous mixture in which the solute particles do not dissolve, but get suspended throughout the bulk of the solvent, left floating around freely in the medium.",
-        "b": "A solution is a special type of homogeneous mixture composed of two or more substances mixed in a single phase.",
-        "c": "A colloid is a mixture in which one substance of microscopically dispersed insoluble particles are suspended throughout another substance.",
-        "d": "Heterogenous mixture do not form a single phase, while Gel does so."
+        "a": "the surface area of each cube will be 6mm<sup>2</sup>",
+        "b": "the surface area of each sphere will be 12.56 mm<sup>2</sup>. Higher the surface area the more is the catalytic activity.",
+        "c": "the surface area of each hemisphere will be 6.28 mm<sup>2</sup>",
+        "d": "surface area of each cone will be 7.58 mm<sup>2</sup>"
       },
       "difficulty": "beginner",
-      "correctAnswer": "c"
+      "correctAnswer": "b"
     },
     {
-      "question": "2. A gel belongs to which of the following colloids?",
+      "question": "2. How do catalysts work?",
       "answers": {
-        "a": "Solid in Gas",
-        "b": "Solid in Solid",
-        "c": "Liquid in Solid",
-        "d": "Solid in Liquid"
+        "a": "Lowers activation energy",
+        "b": "Increases activation energy",
+        "c": "Make more reactants",
+        "d": "Mixes the reactants properly."
       },
       "explanations": {
-        "a": "an example of solid dispersed in the gas phase is solid foam.",
-        "b": "an example of solid dispersed in solid phase is solid sol like cranberry glass.",
-        "c": "an example of liquid dispersed in solid phase is suspension like pigmented ink.",
-        "d": "an example of solid dispersed in liquid phase is gel."
+        "a": "catalysts bring reactants closer on their surface and hence decrease the activation energy of the reaction.",
+        "b": "inhibitor increases the activation energy of the reaction.",
+        "c": "catalyst do not have any effect on the concentration of reactants",
+        "d": "catalysts do not mix the reactants."
       },
       "difficulty": "beginner",
-      "correctAnswer": "d"
+      "correctAnswer": "b"
     },
     {
-      "question": "3. Solubility of the agar polysaccharide in water depends on:",
+      "question": "3. What does a positive catalyst do?",
       "answers": {
-        "a": "functional groups present in it.",
-        "b": "hydrophobic nature of repeating units.",
-        "c": "length of the repeating unit.",
-        "d": "structure of the repeating unit."
+        "a": "Slows a reaction",
+        "b": "Speeds up a reaction",
+        "c": "Inhibits a reaction",
+        "d": "Improves other catalyst"
       },
       "explanations": {
-        "a": "functional groups present in any chain will help in solubility only when the chain length is small. For longer chain length the effect of the chain is dominant on the functional groups.",
-        "b": "the longer the chain length, more is the hydrophobicity of the molecule and in the case if agar, it is the dominant factor.",
-        "c": "while length of repeating units is key to the hydrophobic nature of the gel, the hydrophobicity does not change for small changes in the length of repeating units.",
-        "d": "the structure of the repeating units play a major role after the dissolution has happened during cooling."
+        "a": "Negative catalysts decrease the overall rate of the chemical reaction.",
+        "b": "Positive catalysts are those catalysts which increase the rate of the reaction This means that the activation energy of the reaction is lowered, and the speed of the reaction also increases.",
+        "c": "inhibitors are the same as negative catalysts.",
+        "d": "Promoters or co-catalyst are the substances which increase the catalytic activity of catalyst being used."
       },
       "difficulty": "intermediate",
       "correctAnswer": "b"
     },
     {
-      "question": "4. Agar agar gel finds use in Cell structure and microbiology as:",
+      "question": "4. Which of the following is incorrect for a catalyst?",
       "answers": {
-        "a": "It is stable under a wide range of temperature for longer periods of time",
-        "b": "it is resistant to change in pH.",
-        "c": "it is indigestible to many organisms.",
-        "d": "it is cheap and easy to make."
+        "a": "Bio-chemical reactions are mostly catalysed by enzymes",
+        "b": "Catalyst does not start a reaction",
+        "c": "Catalyst changes the equilibrium constant of a reaction",
+        "d": "Co-enzymes increase the activity of an enzyme"
       },
       "explanations": {
-        "a": "Agar agar jelly degrades if exposed to high temperatures for long periods of time.",
-        "b": "it can degrade under pH less than 6.",
-        "c": "Agar is indigestible for many organisms so that microbial growth does not affect the gel used and it remains stable.",
-        "d": "though it is cheap and easy to prepare, the primary reason is to meet the nutritional needs of microbes."
+        "a": "enzymes act as catalysts in reactions occurring in biological systems like pepsin, trypsin.",
+        "b": "catalysts can start a reaction by decreasing the energy barrier.",
+        "c": "catalysts affect the rate of the reaction but do not affect the rate constant.",
+        "d": "co-enzymes are co-catalyst for enzymes which increase the catalytic activity of enzymes."
       },
       "difficulty": "advanced",
       "correctAnswer": "c"
