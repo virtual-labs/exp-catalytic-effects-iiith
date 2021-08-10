@@ -58,6 +58,7 @@ async function moveCuvette() {
     document.getElementById("instruction").innerHTML =
       "Click on Observe button to observe what is happening inside the Spectrophotometer and choose video speed according to your own liking.";
     //"observation" is the Instructions HTML element that will be visible only in small screens, i.e., width smaller than 769px
+
     document.getElementById("observation").innerHTML =
       "Click on Observe button to observe what is happening inside the Spectrophotometer and choose video speed according to your own liking.";
     overallIteration++;
@@ -285,6 +286,7 @@ function setupMessage() {
   //"instruction" is the Instructions HTML element that will be visible only in wide screens, i.e, width greater than 768px
   document.getElementById("instruction").innerHTML = setupMessages[setup];
   //"observation" is the Instructions HTML element that will be visible only in small screens, i.e., width smaller than 769px
+
   document.getElementById("observation").innerHTML = setupMessages[setup];
   setup++;
 }
@@ -351,6 +353,7 @@ function observeMessage() {
   //"instruction" is the Instructions HTML element that will be visible only in wide screens, i.e, width greater than 768px
   document.getElementById("instruction").innerHTML = observationMessages[iter2];
   //"observation" is the Instructions HTML element that will be visible only in small screens, i.e., width smaller than 769px
+
   document.getElementById("observation").innerHTML = observationMessages[iter2];
 }
 
@@ -384,6 +387,7 @@ async function restart() {
   //"instruction" is the Instructions HTML element that will be visible only in wide screens, i.e, width greater than 768px
   document.getElementById("instruction").innerHTML = "";
   //"observation" is the Instructions HTML element that will be visible only in small screens, i.e., width smaller than 769px
+
   document.getElementById("observation").innerHTML = "";
   overallIteration = -4;
   iter2 = -1;
@@ -430,6 +434,7 @@ async function observe() {
     //"observation" is the Instructions HTML element that will be visible only in small screens, i.e., width smaller than 769px
     document.getElementById("observation").innerHTML = "";
     //"instruction" is the Instructions HTML element that will be visible only in wide screens, i.e, width greater than 768px
+
     document.getElementById("instruction").innerHTML = "";
 
     observeMessage();
@@ -444,15 +449,14 @@ async function observe() {
       document.getElementById("instruction").innerHTML =
         "Click on Observe option in the Control Menu again to see the graph.";
       //"observation" is the Instructions HTML element that will be visible only in small screens, i.e., width smaller than 769px
+
       document.getElementById("observation").innerHTML =
         "Click on Observe option in the Control Menu again to see the graph.";
     }
   } else if (overallIteration === 6) {
     document.getElementById("observe").style.pointerEvents = "none";
     observeMessage();
-
     document.getElementById("slidecontainer").style.display = "none";
-
     document.getElementById("animation-video").style.display = "none";
     document.getElementById("plotted-graph-window").style.display = "block";
     createGraph();
@@ -463,6 +467,7 @@ async function observe() {
       document.getElementById("instruction").innerHTML =
         "Click on Restart option in the Control Menu to restart the experiment from scratch.";
       //"observation" is the Instructions HTML element that will be visible only in small screens, i.e., width smaller than 769px
+
       document.getElementById("observation").innerHTML =
         "Click on Restart option in the Control Menu to restart the experiment from scratch.";
     }, 10000);
