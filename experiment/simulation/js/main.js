@@ -7,6 +7,21 @@ let purple = "#886da7";
 let red = "#f54545";
 let yellow = "#ebe691";
 
+const apparatusOptions = [
+  "beaker-gold",
+  "beaker-eosin",
+  "beaker-sodium",
+  "device-cuvette",
+  "device-spectro",
+  "observe",
+];
+
+apparatusOptions.forEach(function (option) {
+  document.getElementById(option).style.pointerEvents = "none";
+});
+
+document.getElementById("beaker-gold").style.pointerEvents = "auto";
+
 async function moveCuvette() {
   let image = document.getElementById("cuvette");
   image.setAttribute("opacity", "1");
@@ -37,9 +52,12 @@ async function moveCuvette() {
         translateY: 0,
         scale: 1,
       });
+    document.getElementById("observe").style.pointerEvents = "auto";
 
+    //"instruction" is the Instructions HTML element that will be visible only in wide screens, i.e, width greater than 768px
     document.getElementById("instruction").innerHTML =
       "Click on Observe button to observe what is happening inside the Spectrophotometer and choose video speed according to your own liking.";
+    //"observation" is the Instructions HTML element that will be visible only in small screens, i.e., width smaller than 769px
 
     document.getElementById("observation").innerHTML =
       "Click on Observe button to observe what is happening inside the Spectrophotometer and choose video speed according to your own liking.";
@@ -96,7 +114,6 @@ async function pourGold() {
     let endY = "-150%";
 
     screenWidth();
-    console.log("divWidth: ", divWidth);
 
     if (divWidth < 769) {
       startY = "-120%";
@@ -266,31 +283,41 @@ let setupMessages = [
 let setup = 0;
 
 function setupMessage() {
+  //"instruction" is the Instructions HTML element that will be visible only in wide screens, i.e, width greater than 768px
   document.getElementById("instruction").innerHTML = setupMessages[setup];
+  //"observation" is the Instructions HTML element that will be visible only in small screens, i.e., width smaller than 769px
+
   document.getElementById("observation").innerHTML = setupMessages[setup];
   setup++;
+}
+
+function apparatusSetup(visibleID, oldOption, newOption) {
+  document.getElementById(visibleID).style.visibility = "visible";
+  document.getElementById(oldOption).style.pointerEvents = "none";
+  document.getElementById(newOption).style.pointerEvents = "auto";
 }
 
 setupMessage();
 async function visibility(x) {
   if (x === 1 && overallIteration === -4) {
-    document.getElementById("gold-beaker").style.visibility = "visible";
+    apparatusSetup("gold-beaker", "beaker-gold", "beaker-eosin");
     overallIteration++;
     setupMessage();
   } else if (x === 2 && overallIteration === -3) {
-    document.getElementById("eosin-beaker").style.visibility = "visible";
+    apparatusSetup("eosin-beaker", "beaker-eosin", "beaker-sodium");
     overallIteration++;
     setupMessage();
   } else if (x === 3 && overallIteration === -2) {
-    document.getElementById("sodium-beaker").style.visibility = "visible";
+    apparatusSetup("sodium-beaker", "beaker-sodium", "device-cuvette");
     overallIteration++;
     setupMessage();
   } else if (x === 4 && overallIteration === -1) {
-    document.getElementById("cuvette-row").style.visibility = "visible";
+    apparatusSetup("cuvette-row", "device-cuvette", "device-spectro");
     overallIteration++;
     setupMessage();
   } else if (x === 5 && overallIteration === 0) {
-    document.getElementById("spectro-row").style.visibility = "visible";
+    apparatusSetup("spectro-row", "device-spectro", "restart");
+    document.getElementById("gold-beaker").style.cursor = "pointer";
     overallIteration++;
     changeMessage();
   }
@@ -305,11 +332,11 @@ let instructionMessages = [
 let iter1 = -1;
 function changeMessage() {
   iter1++;
+  //"instruction" is the Instructions HTML element that will be visible only in wide screens, i.e, width greater than 768px
   document.getElementById("instruction").innerHTML = instructionMessages[iter1];
+  //"observation" is the Instructions HTML element that will be visible only in small screens, i.e., width smaller than 769px
   document.getElementById("observation").innerHTML = instructionMessages[iter1];
 }
-
-document.getElementById("gold-beaker").style.cursor = "pointer";
 
 let iter2 = -1;
 let observationMessages = [
@@ -323,7 +350,10 @@ function observeMessage() {
   }
   iter2++;
 
+  //"instruction" is the Instructions HTML element that will be visible only in wide screens, i.e, width greater than 768px
   document.getElementById("instruction").innerHTML = observationMessages[iter2];
+  //"observation" is the Instructions HTML element that will be visible only in small screens, i.e., width smaller than 769px
+
   document.getElementById("observation").innerHTML = observationMessages[iter2];
 }
 
@@ -340,14 +370,24 @@ document.getElementById("simulation").style.minHeight =
 let restartAnimation = false;
 
 async function restart() {
+  apparatusOptions.forEach(function (option) {
+    document.getElementById(option).style.pointerEvents = "none";
+  });
+  document.getElementById("beaker-gold").style.pointerEvents = "auto";
+
   document.getElementById("simulation").style.height = originalSimulationHeight;
 
   document.getElementById("animation-video").style.display = "none";
   document.getElementById("plotted-graph-window").style.display = "none";
 
+  //"head-instructions" is the Heading of the Instructions HTML element that will be visible only in wide screens, i.e., width greater than 768px
   document.getElementById("head-instructions").innerHTML = "Instructions";
+  //"head-observations" is the Heading of the Instructions HTML element that will be visible only in small screens, i.e., width smaller than 769px
   document.getElementById("head-observations").innerHTML = "Instructions";
+  //"instruction" is the Instructions HTML element that will be visible only in wide screens, i.e, width greater than 768px
   document.getElementById("instruction").innerHTML = "";
+  //"observation" is the Instructions HTML element that will be visible only in small screens, i.e., width smaller than 769px
+
   document.getElementById("observation").innerHTML = "";
   overallIteration = -4;
   iter2 = -1;
@@ -366,7 +406,7 @@ async function restart() {
   restartAnimation = true;
 
   document.getElementById("eosin-beaker").style.cursor = "default";
-  document.getElementById("gold-beaker").style.cursor = "pointer";
+  document.getElementById("gold-beaker").style.cursor = "default";
   document.getElementById("sodium-beaker").style.cursor = "default";
 
   //Resetting the Cuvette
@@ -380,14 +420,21 @@ async function restart() {
 
 async function observe() {
   if (overallIteration === 5) {
+    document.getElementById("observe").style.pointerEvents = "none";
     document.getElementById("slidecontainer").style.display = "block";
     document.getElementById("apparatus-bottles").style.display = "none";
     document.getElementById("apparatus-spectro").style.display = "none";
     document.getElementById("animation-video").style.display = "block";
     document.getElementById("animation-bottom-right").play();
+
+    //"head-instructions" is the Heading of the Instructions HTML element that will be visible only in wide screens, i.e., width greater than 768px
     document.getElementById("head-instructions").innerHTML = "Observations";
+    //"head-observations" is the Heading of the Instructions HTML element that will be visible only in small screens, i.e., width smaller than 769px
     document.getElementById("head-observations").innerHTML = "Observations";
+    //"observation" is the Instructions HTML element that will be visible only in small screens, i.e., width smaller than 769px
     document.getElementById("observation").innerHTML = "";
+    //"instruction" is the Instructions HTML element that will be visible only in wide screens, i.e, width greater than 768px
+
     document.getElementById("instruction").innerHTML = "";
 
     observeMessage();
@@ -396,25 +443,31 @@ async function observe() {
 
     if (!restartAnimation) {
       overallIteration++;
+      document.getElementById("observe").style.pointerEvents = "auto";
 
+      //"instruction" is the Instructions HTML element that will be visible only in wide screens, i.e, width greater than 768px
       document.getElementById("instruction").innerHTML =
         "Click on Observe option in the Control Menu again to see the graph.";
+      //"observation" is the Instructions HTML element that will be visible only in small screens, i.e., width smaller than 769px
+
       document.getElementById("observation").innerHTML =
         "Click on Observe option in the Control Menu again to see the graph.";
     }
   } else if (overallIteration === 6) {
+    document.getElementById("observe").style.pointerEvents = "none";
     observeMessage();
-
     document.getElementById("slidecontainer").style.display = "none";
-
     document.getElementById("animation-video").style.display = "none";
     document.getElementById("plotted-graph-window").style.display = "block";
     createGraph();
 
     overallIteration++;
     setTimeout(function () {
+      //"instruction" is the Instructions HTML element that will be visible only in wide screens, i.e, width greater than 768px
       document.getElementById("instruction").innerHTML =
         "Click on Restart option in the Control Menu to restart the experiment from scratch.";
+      //"observation" is the Instructions HTML element that will be visible only in small screens, i.e., width smaller than 769px
+
       document.getElementById("observation").innerHTML =
         "Click on Restart option in the Control Menu to restart the experiment from scratch.";
     }, 10000);
@@ -466,5 +519,6 @@ function createGraph() {
     },
   };
 
-  Plotly.newPlot("chart-container", data, layout);
+  let config = { responsive: true };
+  Plotly.newPlot("chart-container", data, layout, config);
 }
