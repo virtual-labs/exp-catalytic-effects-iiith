@@ -11,5 +11,5 @@
 2. What happens to the color of gold particles after its participation in the catalysis?  
 3. What was the absorbance value of the gold seed particle solution?  
 4. What was the initial absorbance value of the reaction solution used for the reduction kinetics study?  
-5. How can one follow the reduction of eosin at ¦Ë=535 nm near its maximum absorbance wavelength where gold nanoparticles also absorb light?  
+5. How can one follow the reduction of eosin at Î»=535 nm near its maximum absorbance wavelength where gold nanoparticles also absorb light?  
 6. Why does the catalysed reaction rate varies for different sized particle samples, though the same quantity of gold and all other reactants are used?
