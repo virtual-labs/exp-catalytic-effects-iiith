@@ -23,7 +23,7 @@
     {
       "target": "pretest.html",
       "source": "pretest.json",
-      "label": "Protest",
+      "label": "Pretest",
       "unit-type": "task",
       "content-type": "assesment"
     },
